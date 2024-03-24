@@ -6,6 +6,7 @@ use Filament\Pages;
 use Filament\Panel;
 use Filament\Widgets;
 use Filament\PanelProvider;
+use LaraZeus\Wind\WindPlugin;
 use Filament\Support\Colors\Color;
 use Filament\Http\Middleware\Authenticate;
 use Jeffgreco13\FilamentBreezy\BreezyCore;
@@ -65,6 +66,19 @@ class AdminPanelProvider extends PanelProvider
                 \Hasnayeen\Themes\ThemesPlugin::make(),
                 FilamentSpatieRolesPermissionsPlugin::make(),
                 FilamentSpatieLaravelBackupPlugin::make(),
+                WindPlugin::make()
+                    ->windPrefix('wind')
+                    ->windMiddleware(['web'])
+                    ->defaultDepartmentId(1)
+                    ->defaultStatus('NEW')
+                    ->departmentResource()
+                    ->windModels([
+                        'Department' => \LaraZeus\Wind\Models\Department::class,
+                        'Letter' => \LaraZeus\Wind\Models\Letter::class,
+                    ])
+                    ->uploadDisk('public')
+                    ->uploadDirectory('logos')
+                    ->navigationGroupLabel('Wind'),
                 BreezyCore::make()
                 ->myProfile(
                     shouldRegisterUserMenu: true, // Sets the 'account' link in the panel User Menu (default = true)
