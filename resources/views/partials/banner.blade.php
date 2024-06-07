@@ -10,14 +10,12 @@
                     Предложение ограничено. Бронируйте сейчас!
                 </p>
                 <!-- Кнопка -->
-                <div class="mt-4">
-                    <a href="#" class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Забронировать сейчас</a>
-                </div>
+              ч
             </div>
             <div class="mt-8 lg:mt-0 lg:ml-8">
                 <!-- Изображение баннера (заглушка) -->
                 <div class="inline-block relative w-full overflow-hidden bg-gray-500 rounded-lg shadow-xl">
-                    <img src="https://via.placeholder.com/500x500.png" alt="Изображение баннера" class="relative w-full" />
+                    <img src="https://aqualab.kg/uploads/a/admin/original/18232.jpg" alt="Изображение баннера" width="500[px]" class="relative" />
                 </div>
             </div>
         </div>

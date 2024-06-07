@@ -6,7 +6,8 @@
         </div>
         <!-- Колонка с формой -->
         <div class="w-1/2">
-            <form action="" method="POST">
+
+            <form method="POST" action="{{ route('feedback.submit') }}" method="POST">
                 @csrf
                 <div class="mb-4">
                     <label for="name" class="block text-gray-700 font-bold mb-2">Имя</label>
@@ -20,9 +21,7 @@
                     <label for="message" class="block text-gray-700 font-bold mb-2">Ваше сообщение</label>
                     <textarea id="message" name="message" rows="5" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-indigo-500" placeholder="Введите ваше сообщение" required></textarea>
                 </div>
-                <div class="text-center">
-                    <button type="submit" class="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600 focus:outline-none">Отправить</button>
-                </div>
+                <button type="submit" class="w-full bg-indigo-500 text-white py-2 px-4 rounded-lg hover:bg-indigo-600 transition duration-300">Отправить</button>
             </form>
         </div>
     </div>

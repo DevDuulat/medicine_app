@@ -21,6 +21,7 @@ use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use ShuvroRoy\FilamentSpatieLaravelBackup\FilamentSpatieLaravelBackupPlugin;
 use Althinect\FilamentSpatieRolesPermissions\FilamentSpatieRolesPermissionsPlugin;
+use Stephenjude\FilamentBlog\BlogPlugin;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -79,6 +80,8 @@ class AdminPanelProvider extends PanelProvider
                     ->uploadDisk('public')
                     ->uploadDirectory('logos')
                     ->navigationGroupLabel('Wind'),
+                BlogPlugin::make(),
+
                 BreezyCore::make()
                 ->myProfile(
                     shouldRegisterUserMenu: true, // Sets the 'account' link in the panel User Menu (default = true)

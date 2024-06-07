@@ -8,7 +8,6 @@
                 <li><a href="/doctors">Врачи</a></li>
                 <li><a href="/contacts">Контакты</a></li>
                 <li><a href="/analyses">Анализы</a></li>
-                <li><a href="/appointment" class="bg-[#D35400] px-4 py-2 rounded-md">Записаться на прием</a></li>
             </ul>
         </nav>
     </div>
