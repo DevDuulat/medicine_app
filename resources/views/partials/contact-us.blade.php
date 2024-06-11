@@ -1,10 +1,8 @@
 <div class="flex justify-center items-center py-12 bg-gray-100">
     <div class="bg-white p-8 rounded shadow-md flex justify-between w-2/3">
-        <!-- Колонка с картинкой -->
         <div class="w-1/2 mr-4 flex items-center">
             <img src="https://aqualab.kg/templates/aqualab/img/about-us.png" alt="Your Image" class="w-full my-auto">
         </div>
-        <!-- Колонка с формой -->
         <div class="w-1/2">
 
             <form method="POST" action="{{ route('feedback.submit') }}" method="POST">
